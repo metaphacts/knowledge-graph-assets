@@ -4,7 +4,7 @@
 
 # Nobel Prize Ontology
 
-The original of ontology was retrieved in January 2021 from https://data.nobelprize.org/specification/ (http://data.nobelprize.org/terms/ for rdf/xml version) and has been augmented by metaphacts GmbH with some SHACL shapes. Changes are noted in the ontology meta-data.
+The [original OWL ontology](nobel-prize-original-owl-ontology.rdf) was retrieved in January 2021 from https://data.nobelprize.org/specification/ (http://data.nobelprize.org/terms.rdf for rdf/xml version) and has been augmented by metaphacts GmbH with some SHACL shapes. Changes are noted in the ontology meta-data.
 
 ## License
 

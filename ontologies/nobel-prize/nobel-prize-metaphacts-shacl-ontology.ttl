@@ -15,7 +15,7 @@
   Please refer to https://www.nobelprize.org/about/linked-data-documentation/ for details.
   """@en;
   rdfs:comment """
-  The original ontology was retrieved from http://data.nobelprize.org/terms/ in RDF/XML (Nov 2020).
+  The original ontology was retrieved from http://data.nobelprize.org/terms/ in RDF/XML (January 2021).
   The ontology was converted into turtle and the following changes have been made by metaphacts:
   <li>
    <ul>Fix typo: nobel:Litterature -> nobel:Literature (correct in data, c.f. http://data.nobelprize.org/page/category/Literature)</ul>
