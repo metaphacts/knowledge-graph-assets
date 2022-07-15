@@ -1,0 +1,55 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix nobel: <http://data.nobelprize.org/terms/> .
+@prefix nobel-ext: <http://data.nobelprize.org/terms-ext/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+nobel-ext:vocabulary-categories-collection a skos:Collection;
+  skos:member nobel:Chemistry, nobel:Economic_Sciences, nobel:Literature, nobel:Peace,
+    nobel:Physics, nobel:Physiology_or_Medicine;
+  skos:prefLabel "Nobel Prize Categories - Collection" .
+
+nobel-ext:vocabulary a skos:ConceptScheme;
+  skos:hasTopConcept nobel-ext:Categories;
+  skos:prefLabel "Nobel Prize Controlled Terms" .
+
+nobel:Chemistry a skos:Concept;
+  skos:inScheme nobel-ext:vocabulary;
+  skos:broader nobel-ext:Science-of-Nature;
+  skos:prefLabel "Chemistry" .
+
+nobel:Economic_Sciences a skos:Concept;
+  skos:inScheme nobel-ext:vocabulary;
+  skos:broader nobel-ext:Categories;
+  skos:prefLabel "Economic sciences" .
+
+nobel:Literature a skos:Concept;
+  skos:inScheme nobel-ext:vocabulary;
+  skos:broader nobel-ext:Categories;
+  skos:prefLabel "Literature" .
+
+nobel:Peace a skos:Concept;
+  skos:inScheme nobel-ext:vocabulary;
+  skos:broader nobel-ext:Categories;
+  skos:prefLabel "Peace" .
+
+nobel:Physics a skos:Concept;
+  skos:inScheme nobel-ext:vocabulary;
+  skos:broader nobel-ext:Science-of-Nature;
+  skos:prefLabel "Physics" .
+
+nobel:Physiology_or_Medicine a skos:Concept;
+  skos:inScheme nobel-ext:vocabulary;
+  skos:broader nobel-ext:Categories;
+  skos:prefLabel "Physiology or Medicine" .
+
+nobel-ext:Categories a skos:Concept;
+  skos:inScheme nobel-ext:vocabulary;
+  skos:prefLabel "Nobel Prize Categories";
+  skos:note "This is a rather artificial concept to serve as a top level concept in the scheme. It is NOT an official nobel price category, but has been introduced by metaphacts for demonstration purpose only.".
+
+nobel-ext:Science-of-Nature a skos:Concept;
+  skos:inScheme nobel-ext:vocabulary;
+  skos:broader nobel-ext:Categories;
+  skos:prefLabel "Science of Nature";
+  skos:note "This is NOT an official nobel price category, but has been introduced by metaphacts for demonstration purpose only.".
